@@ -49,8 +49,11 @@ parameters:
     type: enum
     node: DigitalIOControl/LineSelector
   - name: line2_linemode # NOT TESTED
-    type: bool
+    type: enum
     node: DigitalIOControl/LineMode
+  - name: line2_linesource
+    type: enum
+    node: DigitalIOControl/LineSource
   - name: line3_selector # NOT TESTED probably green wire: non-isolated input/output
     type: enum
     node: DigitalIOControl/LineSelector
