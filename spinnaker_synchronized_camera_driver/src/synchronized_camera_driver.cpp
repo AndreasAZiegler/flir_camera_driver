@@ -29,7 +29,7 @@ SynchronizedCameraDriver::SynchronizedCameraDriver(const rclcpp::NodeOptions & o
 {
   imageTransport_ = std::make_shared<image_transport::ImageTransport>(
     std::shared_ptr<SynchronizedCameraDriver>(this, [](auto *) {}));
-  createExposureControllers();  // before cams so they can refer to it
+  // createExposureControllers();  // before cams so they can refer to it
   createCameras();
   // start cameras only when all synchronizer state has been set up!
   for (auto & c : cameras_) {
