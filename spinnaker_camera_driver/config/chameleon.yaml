@@ -71,6 +71,10 @@ parameters:
   - name: exposure_time
     type: float
     node: AcquisitionControl/ExposureTime
+  - name: exposure_mode
+    type: enum
+    # valid values: "Timed" and "TriggerWidth"
+    node: AcquisitionControl/ExposureMode
   - name: trigger_mode
     type: enum
     # valid values are "On" and "Off"
